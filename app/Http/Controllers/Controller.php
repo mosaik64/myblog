@@ -9,10 +9,5 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
-   // use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-   public function add()
-    {
-        return view('admin.blog.create');
-    }
-
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
