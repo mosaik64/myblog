@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->unsignedSmallInteger('order_num');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

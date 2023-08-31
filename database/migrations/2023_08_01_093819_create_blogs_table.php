@@ -39,6 +39,7 @@ return new class extends Migration
             $table->string('picture_description9', 200)->nullable();
             $table->boolean('visible')->default(true);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
